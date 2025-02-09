@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mint Green Portfolio</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <!-- AOS Animation Library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Times New Roman', Times, serif; /* Font updated to Times New Roman */
+      margin: 0;
+      padding: 0;
+      background: #000; /* Black background */
+      color: #d4f1c5; /* Mint green text */
+    }
+    
+
+    /* Navbar */
+    .navbar {
+      background: #222; /* Dark black for navbar */
+    }
+    .navbar-brand, .nav-link {
+      color: #d4f1c5 !important;
+    }
+
+    /* Section Padding */
+    .section {
+      padding: 60px 15px;
+    }
+
+    /* Glassmorphism Effect */
+    .glass {
+      background: rgba(255, 255, 255, 0.1); /* Transparent effect */
+      backdrop-filter: blur(10px);
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 255, 127, 0.3); /* Mint green glow */
+    }
+
+    /* Buttons */
+    .btn-custom {
+      background: linear-gradient(90deg, #28a745, #20c997); /* Mint green gradient */
+      border: none;
+      color: #000;
+      padding: 5px 5px;
+      border-radius: 25px;
+      transition: transform 0.3s, background 0.3s;
+    }
+    .btn-custom:hover {
+      background: linear-gradient(90deg, #20c997, #28a745); /* Reverse gradient on hover */
+      transform: scale(1.1);
+    }
+
+    /* Project Cards */
+    .project-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(212, 241, 197, 0.3); /* Mint green border */
+      border-radius: 15px;
+      overflow: hidden;
+      transition: transform 0.3s, border 0.3s;
+    }
+    .project-card:hover {
+      transform: scale(1.05);
+      border: 1px solid #d4f1c5; /* Bright mint green border */
+    }
+
+    /* Social Media Icons */
+    .social-icons a {
+      margin: 0 15px;
+      color: #d4f1c5; /* Mint green */
+      font-size: 30px;
+      transition: color 0.3s, transform 0.3s;
+    }
+    .social-icons a:hover {
+      color: #20c997; /* Brighter mint green */
+      transform: scale(1.2);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      background: #111;
+      color: #d4f1c5;
+    }
+
+    /* Headings and Text */
+    h1, h2, h5 {
+      color: #d4f1c5; /* Mint green headings */
+    }
+    p, ul, li {
+      color: #d4f1c5; /* Mint green text */
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">My Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#stack">Technical Stack</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="section text-center" style="padding: 100px 15px;">
+    <div data-aos="fade-down">
+      <img src="your-photo.jpg" alt="Your Photo" class="rounded-circle mb-3" width="150">
+      <h1>Your Name</h1>
+      <p>Creative Developer | Designer | Innovator</p>
+      <a href="resume.pdf" class="btn btn-custom" download>Download Resume</a>
+    </div>
+  </header>
+
+  <!-- About Me -->
+  <section id="about" class="section glass" data-aos="fade-right">
+    <div class="container text-center">
+      <h2>About Me</h2>
+      <p>A short paragraph about who you are, your experience, and what you love to do.</p>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+<section id="education" class="section" data-aos="fade-left">
+    <div class="container glass">
+      <h2 class="text-center">Education</h2>
+      <div class="row text-center">
+        <!-- Column 1 -->
+        <div class="col-md-3 mb-4">
+          <h5>Bachelor's Degree</h5>
+          <p>Computer Science</p>
+          <p>XYZ University</p>
+          <p>(Year)</p>
+        </div>
+        <!-- Column 2 -->
+        <div class="col-md-3 mb-4">
+          <h5>High School</h5>
+          <p>Science Stream</p>
+          <p>ABC School</p>
+          <p>(Year)</p>
+        </div>
+        <!-- Column 3 -->
+        <div class="col-md-3 mb-4">
+          <h5>Certification</h5>
+          <p>Full-Stack Development</p>
+          <p>Online Bootcamp</p>
+          <p>(Year)</p>
+        </div>
+        <!-- Column 4 -->
+        <div class="col-md-3 mb-4">
+          <h5>Diploma</h5>
+          <p>Web Design</p>
+          <p>XYZ Institute</p>
+          <p>(Year)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+ <!-- Technical Stack Section -->
+<section id="stack" class="section" data-aos="fade-up">
+    <div class="container text-center glass">
+      <h2>Technical Stack</h2>
+      <div class="row text-center">
+        <!-- Column 1 -->
+        <div class="col-md-3 mb-4">
+          <h5>Data Scientist</h5>
+          <p>Python, TensorFlow, Scikit-learn, Pandas</p>
+        </div>
+        <!-- Column 2 -->
+        <div class="col-md-3 mb-4">
+          <h5>Data Engineer</h5>
+          <p>SQL, Apache Spark, AWS, Hadoop</p>
+        </div>
+        <!-- Column 3 -->
+        <div class="col-md-3 mb-4">
+          <h5>Data Analyst</h5>
+          <p>Tableau, Power BI, Excel, R</p>
+        </div>
+        <!-- Column 4 -->
+        <div class="col-md-3 mb-4">
+          <h5>Web Developer</h5>
+          <p>HTML, CSS, JavaScript, React</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Projects Section -->
+<section id="projects" class="section">
+    <div class="container">
+      <h2 class="text-center">Projects</h2>
+      <div class="row text-center">
+        <!-- Column 1: Python Projects -->
+        <div class="col-md-3 mb-4">
+          <h5>Python</h5>
+          <div class="card project-card">
+            <div class="card-body">
+              <h6>Project 1: Data Scraper</h6>
+              <a href="https://your-python-project1.com" target="_blank" class="btn btn-custom btn-sm">View Details</a>
+            </div>
+          </div>
+          <div class="card project-card mt-3">
+            <div class="card-body">
+              <h6>Project 2: File Organizer</h6>
+              <a href="https://your-python-project2.com" target="_blank" class="btn btn-custom btn-sm">View Details</a>
+            </div>
+          </div>
+          <div class="card project-card mt-3">
+            <div class="card-body">
+              <h6>Project 3: Chat Application</h6>
+              <a href="https://your-python-project3.com" target="_blank" class="btn btn-custom btn-sm">View Details</a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Column 2: Machine Learning Projects -->
+        <div class="col-md-3 mb-4">
+          <h5>Machine Learning</h5>
+          <div class="card project-card">
+            <div class="card-body">
+              <h6>Project 1: Sentiment Analysis</h6>
+              <a href="https://your-ml-project1.com" target="_blank" class="btn btn-custom btn-sm">View Details</a>
+            </div>
+          </div>
+          <div class="card project-card mt-3">
+            <div class="card-body">
+              <h6>Project 2: Price Predictor</h6>
+              <a href="https://your-ml-project2.com" target="_blank" class="btn btn-custom btn-sm">View Details</a>
+            </div>
+          </div>
+          <div class="card project-card mt-3">
+            <div class="card-body">
+              <h6>Project 3: Recommendation System</h6>
+              <a href="https://your-ml-project3.com" target="_blank" class="btn btn-custom btn-sm">View Details</a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Column 3: Deep Learning Projects -->
+        <div class="col-md-3 mb-4">
+          <h5>Deep Learning</h5>
+          <div class="card project-card">
+            <div class="card-body">
+              <h6>Project 1: Image Classifier</h6>
+              <a href="https://your-dl-project1.com" target="_blank" class="btn btn-custom btn-sm">View Details</a>
+            </div>
+          </div>
+          <div class="card project-card mt-3">
+            <div class="card-body">
+              <h6>Project 2: Face Recognition</h6>
+              <a href="https://your-dl-project2.com" target="_blank" class="btn btn-custom btn-sm">View Details</a>
+            </div>
+          </div>
+          <div class="card project-card mt-3">
+            <div class="card-body">
+              <h6>Project 3: Chatbot</h6>
+              <a href="https://your-dl-project3.com" target="_blank" class="btn btn-custom btn-sm">View Details</a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Column 4: Web Development Projects -->
+        <div class="col-md-3 mb-4">
+          <h5>Web Development</h5>
+          <div class="card project-card">
+            <div class="card-body">
+              <h6>Project 1: E-Commerce Website</h6>
+              <a href="https://your-webdev-project1.com" target="_blank" class="btn btn-custom btn-sm">View Details</a>
+            </div>
+          </div>
+          <div class="card project-card mt-3">
+            <div class="card-body">
+              <h6>Project 2: Portfolio Website</h6>
+              <a href="https://your-webdev-project2.com" target="_blank" class="btn btn-custom btn-sm">View Details</a>
+            </div>
+          </div>
+          <div class="card project-card mt-3">
+            <div class="card-body">
+              <h6>Project 3: Blogging Platform</h6>
+              <a href="https://your-webdev-project3.com" target="_blank" class="btn btn-custom btn-sm">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Contact (Social Media Icons) -->
+  <section id="contact" class="section glass" data-aos="fade-right">
+    <div class="container text-center">
+      <h2>Contact</h2>
+      <div class="social-icons">
+        <a href="https://instagram.com/yourusername" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:your-email@example.com" target="_blank"><i class="fas fa-envelope"></i></a>
+        <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://wa.me/yourphonenumber" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Your Name. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- AOS Animation Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
